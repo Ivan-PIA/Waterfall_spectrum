@@ -68,15 +68,15 @@ def add_pss_in_signal(ofdm_tx, N_fft):
     return np.concatenate([pss_time, ofdm_tx])
 
 if choise_matrix == 1:
-    gif_path = 'C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\photo\\2cPj.gif'  
+    gif_path = 'path'  
 elif choise_matrix == 2:
-    gif_path = 'C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\photo\\gay2.gif' 
+    gif_path = 'path' 
 elif choise_matrix == 3:
-    gif_path = 'C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\photo\\cat.gif' 
+    gif_path = 'path' 
 elif choise_matrix == 4:
-    gif_path = 'C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\photo\\sib.png'
+    gif_path = 'path'
 elif choise_matrix == 5:
-    gif_path = 'C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\photo\\yadro3.jpg'
+    gif_path = 'path'
 
 start = time.time()
 matrices = gif_to_matrices(gif_path)
@@ -95,22 +95,22 @@ print("count_frame : ", count_frame)
 
 start = time.time()
 if choise_matrix == 1:
-    # ofdm = complex_cpp_file("C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\ofdm_matrix\\scoobi_ofdm.txt")
+    # ofdm = complex_cpp_file("path")
     # ofdm = form_ofdm(matrices)
-    # np.savetxt("C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\ofdm_matrix\\scoobi_ofdm_py.txt",ofdm)
-    ofdm = np.loadtxt("C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\ofdm_matrix\\scoobi_ofdm_py.txt", dtype=complex)
+    # np.savetxt("path",ofdm)
+    ofdm = np.loadtxt("path", dtype=complex)
 
 elif choise_matrix == 2:
-    # ofdm = complex_cpp_file("C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\ofdm_matrix\\guys_ofdm.txt")
+    # ofdm = complex_cpp_file("path")
     # ofdm = form_ofdm(matrices)
-    # np.savetxt("C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\ofdm_matrix\\guys_ofdm_py.txt",ofdm)
-    ofdm = np.loadtxt("C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\ofdm_matrix\\guys_ofdm_py.txt", dtype=complex)
+    # np.savetxt("path",ofdm)
+    ofdm = np.loadtxt("path", dtype=complex)
 
 elif choise_matrix == 3:
-    # ofdm = complex_cpp_file("C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\ofdm_matrix\\cat_ofdm.txt")
+    # ofdm = complex_cpp_file("path")
     # ofdm = form_ofdm(matrices)
-    # np.savetxt("C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\ofdm_matrix\\cat_ofdm_py.txt",ofdm)
-    ofdm = np.loadtxt("C:\\Users\\Ivan\\Desktop\\lerning\\OFDM\\OFDM_TX_RX\\test\\ofdm_matrix\\cat_ofdm_py.txt", dtype=complex)
+    # np.savetxt("path",ofdm)
+    ofdm = np.loadtxt("path", dtype=complex)
 
 else:
     ofdm = form_ofdm(matrices)
